@@ -1,0 +1,32 @@
+<body>
+  <header>
+    <div>
+      <a href="https://www.instagram.com" class="ins"><fa-icon [icon]="['fab', 'instagram']"></fa-icon></a>
+      <a href="https://www.twitter.com" class="tw"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
+      <a href="https://www.facebook.com" class="fb"><fa-icon [icon]="['fab', 'facebook']"></fa-icon></a>
+    </div>
+    <div >
+      <h3 class="heading">Saffron Lounge 🧡</h3>
+    </div>
+    <div class="auth-buttons">
+      <a href="/login"><fa-icon [icon]="['fas', 'user']"></fa-icon></a>
+    </div>
+  </header>
+<main>
+  <div class="img">
+    <img src="/assets/img/DXClogo1.jpg" alt="Restaurant Logo">
+  </div>
+  <div class="center-box" style="color: aliceblue;">
+    <p style="font-family: Arial, sans-serif;">Welcome! We're here to take your orders and provide great service.</p>
+    <a routerLink="/login">View our menu</a>
+  </div>
+</main>
+<footer class="footer" >
+  <p >© 2023 Saffron Lounge. All Rights Reserved.</p>
+  <div class="contact-info">
+    <p>Contact us: 123-456-7890 | </p>
+    <a href="mailto:info@saffronlounge.com" class="mail">Email: info@saffronlounge.com </a>
+    <button class="btn btn-link" routerLink="/help">Help-line</button>
+  </div>
+</footer>
+</body>

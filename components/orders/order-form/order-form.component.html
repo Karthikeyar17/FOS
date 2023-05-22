@@ -1,0 +1,49 @@
+<body>
+  <div class="container-fluid h-100 mt-5 mb-5">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow">
+          <div class="card-body px-5">
+            <div class="text-center">
+              <h1 style="color:#f44336">Your Details</h1>
+            </div>
+            <form [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <input type="text" id="name" placeholder="Enter name" class="form-control" formControlName="name" required />
+              </div>
+              <div class="form-group">
+                <input type="text" id="number" placeholder="Enter number" class="form-control" formControlName="ohNumber" required />
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" placeholder="Enter email" class="form-control" formControlName="email" required />
+              </div>
+              <div class="form-group">
+                <input type="tel" id="alt-number" placeholder="Enter alternate number" class="form-control" formControlName="altNumber" required />
+              </div>
+              <div class="form-group">
+                <textarea id="address" placeholder="Enter address" class="form-control" formControlName="address"></textarea>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" id="same-address" (change)="onSameAddressChange($event)" />
+                <label for="same-address">Same as Address</label>
+              </div>
+              <div class="form-group">
+                <textarea id="alt-address" placeholder="Enter alternate address" class="form-control" formControlName="altAddress"></textarea>
+              </div>
+              <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" (click)="goToCart()">Go to Cart</button>
+                <button type="submit" class="btn btn-primary" [disabled]="!orderForm.valid" routerLink="/checkout">Confirm Order</button>
+              </div>
+            </form>
+            <div *ngIf="orderForm.valid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+<app-footer></app-footer>
+</body>

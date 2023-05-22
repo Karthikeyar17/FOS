@@ -1,0 +1,49 @@
+<body>
+  <header>
+    <div class="logo img">
+      <img src="./assets/img/DXC.jpg" alt="Restaurant Logo">
+    </div>
+    <h3 style="color:orangered">Saffron Lounge 🧡</h3>
+    <div class="social-icons">
+      <a href="../home"><fa-icon [icon]="['fas', 'house-chimney-window']"></fa-icon></a>
+    </div>
+  </header>
+  <br>
+  <div class="container">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow">
+          <div class="card-body px-5">
+            <div class="text-center" style="color:rgb(255, 255, 255)">
+              <fa-icon [icon]="faUserLock" class="fa-3x"></fa-icon>
+            </div>
+            <div class="text-center" style="color:whitesmoke">
+              <h2>Welcome</h2>
+            </div>
+            <p style="color: white; text-align: center;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please enter your login details&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <input type="email" id="email" placeholder="Email" class="form-control" formControlName="email" name="email" />
+              </div>
+              <br>
+              <div class="form-group">
+                <input type="password" id="password" placeholder="Password" class="form-control" formControlName="password" name="password" />
+              </div>
+              <br>
+              <input type="submit" class="btn" value="Login" name="">
+            </form>
+          </div>
+          <div class="card-footer">
+            <small><a routerLink="../forgot-password" style="color: white; border: none;">Forgot Password</a></small>
+            <div class="auth-buttons">
+              <a href="/signup" style="color: white; border: 1px ;">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</body>

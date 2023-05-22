@@ -1,0 +1,93 @@
+form {
+  height: 100px;
+  margin-left: 800px;
+  margin-top: 40px;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  background-color: transparent;
+  border: 1px;
+  border-bottom: 2px solid white!important;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+  width: 20%;
+}
+
+select {
+  color: whitesmoke;
+  background-color: transparent;
+  border: 1px;
+  border-bottom: 2px solid white!important;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+  width: 20%;
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+button[type="submit"] {
+  color: white;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 8px 16px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: black;
+}
+
+button[type="submit"]:first-child {
+  background-color: orangered;
+  color: whitesmoke;
+  margin-left: 40px;
+}
+
+button[type="submit"]:first-child:hover {
+  background-color: orangered;
+  color: white;
+}
+
+h1 {
+  color: rgb(236, 69, 17);
+}
+
+h5{
+  color: orangered;;
+}
+
+body {
+  background-image: url('/assets/img/bg/bg8.jpg');
+  background-size: cover;
+  overflow:hidden ;
+  height: 100vh;
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+select::placeholder {
+  color: whitesmoke;
+}

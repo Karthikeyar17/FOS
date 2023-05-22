@@ -1,0 +1,95 @@
+body {
+  overflow: hidden;
+  background-image: url('/assets/img/bg/bg5.jpg');
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+.container-fluid {
+  margin-top: 0;
+}
+
+.card {
+  background-color: transparent;
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+.card-body {
+  background-color: transparent;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  border-radius: 0;
+  border-color: white;
+  box-shadow: none;
+  background-color: transparent;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.form-control:hover {
+  background-color: white;
+
+}
+
+.btn {
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.form-control::placeholder {
+  color: white;
+  }
+  .form-control::placeholder:hover {
+    color: black;
+    }
+.btn-secondary {
+  color: #f44336;
+  border: 2px solid transparent;
+  background-color: transparent;
+  margin-right: 20px;
+}
+
+.btn-secondary:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-primary {
+  color: #f44336;
+  border: 2px solid transparent;
+  background-color: transparent;
+  margin-right: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-primary[disabled] {
+  border: 1px transparent;
+  background-color: transparent;
+  color: #f44336;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
+}
+
+app-footer {
+  margin-top: 50px; /* adjust as needed */
+}
+.form-check label {
+  color: white;
+}

@@ -1,0 +1,132 @@
+.card {
+  background-color: transparent;
+  width: 100%;
+  margin-left: 750px;
+  margin-top: 504x;
+}
+
+.card-body {
+  background-color: transparent;
+}
+
+form {
+  display: flex;
+  opacity: 1;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+  width: 100%;
+}
+.col-md-6,
+.col-lg-4 {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+input[type="email"]:hover,
+input[type="email"]:focus,
+input[type="password"]:hover,
+input[type="password"]:focus {
+  background-color: transparent;
+  border-color: white;
+}
+input[type="submit"]{
+  color: whitesmoke;
+  width: 40%;
+  margin-left: 90px;
+}
+
+
+input[type="submit"]:hover {
+  background-color: orangered;;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.card-footer small {
+  font-size: 14px;
+}
+
+.card-footer a {
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.card-footer a:hover {
+  background-color: orangered;
+  border-color: #0069d9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+header:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+  max-width: 60px;
+  border-radius: 50px;
+}
+
+body {
+  background-image: url('/assets/img/bg/bg6.jpg');
+  background-size: cover;
+  height: 100vh;
+
+}
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: white;
+}
+.social-icons {
+  display: inline-block;
+}
+
+.social-icons a {
+  display: block;
+  color: orange;
+  padding: 10px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: black;
+  color: orange;
+}
+.social-icons a fa-icon {
+  font-size: 24px;
+}

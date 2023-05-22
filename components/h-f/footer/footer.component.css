@@ -1,0 +1,73 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  margin-top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer:hover {
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+.footer p {
+  margin: 0;
+  text-align: center;
+}
+.ins,.fb,.tw {
+  display: inline-block;
+  margin-right: 25px;
+  font-size: 24px;
+  transition: all 0.3s ease-in-out;
+}
+.ins{
+  color: orangered;
+}
+.fb{
+  color: 	#4267B2;
+}
+.tw{
+  color: #00acee;
+
+}
+.ins:hover,.fb:hover,.tw:hover{
+  transform: scale(1.2);
+  border-radius: 10%;
+  padding: 4px,2px;
+}
+.ins:hover{
+  color: orangered;
+}
+.tw:hover {
+color: #00acee;
+}
+.fb:hover{
+  color: 	#4267B2;
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+.contact-info p {
+  color: whitesmoke;
+  margin-right: 10px;
+}
+
+.contact-info a {
+  color: whitesmoke;
+}
+.btn-link,.mail{
+  color: whitesmoke;
+}
+.btn-link:hover,.mail:hover{
+background-color: #f44336;
+padding: 5px,5px;
+border-radius: 10px;
+}

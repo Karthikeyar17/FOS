@@ -1,0 +1,32 @@
+<body>
+  <div class="container">
+    <h1>Your order has been placed successfully!</h1>
+    <p style="color:rgb(226, 25, 25); margin-left: 280px;" >Order ID: {{ orderId }}</p>
+    <p style="color:rgb(229, 19, 19); margin-left: 250px;">Transaction ID: {{ transactionId }}</p>
+    <ul>
+      <li *ngFor="let item of items">{{ item.name }} - {{ item.price }}</li>
+      <li>Total: ₹{{ total }}</li>
+    </ul>
+    <p>"Your food is in transit! Get ready to dig in and indulge in some culinary delights!"</p>
+    <div class="buttons">
+    <button (click)="showFeedbackPrompt()">Leave Feedback</button>
+    <button routerLink="/my-orders">My Orders</button>
+  </div>
+  </div>
+
+  <div *ngIf="showPrompt" class="feedback-prompt">
+    <div class="form-group">
+      <label for="rating">Rating:</label>
+      <select class="form-control" id="rating" [(ngModel)]="feedbackRating">
+        <option value="1">1 - Poor</option>
+        <option value="2">2 - Fair</option>
+        <option value="3">3 - Good</option>
+        <option value="4">4 - Very Good</option>
+        <option value="5">5 - Excellent</option>
+      </select>
+    </div>
+    <button (click)="submitFeedback()">Submit Feedback</button>
+  </div>
+  <app-footer></app-footer>
+  </body>
+  
